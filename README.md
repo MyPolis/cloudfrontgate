@@ -3,6 +3,12 @@ A Traefik middleware plugin that validates incoming requests against Amazon Clou
 
 > Heavily _inspired_ by [sstoner/cloudflaregate](https://github.com/sstoner/cloudflaregate/) plugin.
 
+[![Build Status](https://github.com/portswigger-cloud/cloudfrontgate/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/portswigger-cloud/cloudfrontgate/actions)
+[![Go Report](https://goreportcard.com/badge/github.com/portswigger-cloud/cloudfrontgate)](https://goreportcard.com/report/github.com/portswigger-cloud/cloudfrontgate)
+[![Go Coverage](https://github.com/portswigger-cloud/cloudfrontgate/wiki/coverage.svg)](https://raw.githack.com/wiki/portswigger-cloud/cloudfrontgate/coverage.html)
+[![Latest Release](https://img.shields.io/github/v/release/portswigger-cloud/cloudfrontgate)](https://github.com/portswigger-cloud/cloudfrontgate/releases/latest)
+
+
 ## Features
 
 - Validates that incoming requests originate from Amazon CloudFront's IP ranges
