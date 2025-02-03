@@ -1,6 +1,6 @@
 displayName: CloudFront Gate
 type: middleware
-iconPath: .assets/icon.png
+iconPath: .assets/cloudfront.png
 
 import: github.com/portswigger-cloud/cloudfrontgate
 
