@@ -1,0 +1,12 @@
+displayName: CloudFront Gate
+type: middleware
+iconPath: .assets/icon.png
+
+import: github.com/portswigger-cloud/cloudfrontgate
+
+summary: 'Middleware to verify requests originate from Amazon CloudFront IPs when public access enabled.'
+
+testData:
+  refreshInterval: "24h"
+  allowedIPs:
+    - "192.168.1.0/24"
