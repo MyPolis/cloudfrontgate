@@ -15,7 +15,7 @@ A Traefik middleware plugin that validates incoming requests against Amazon Clou
 - Automatic periodic updates of Amazon CloudFront IP ranges
 - Allow additional IP addresses or CIDR ranges
 
-## Configuration
+## Configuration
 
 ### Static Configuration
 
