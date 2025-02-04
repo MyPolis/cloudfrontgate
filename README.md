@@ -27,7 +27,7 @@ experimental:
   plugins:
     cloudfrontgate:
       moduleName: github.com/portswigger-cloud/cloudfrontgate
-      version: v0.0.2
+      version: v0.0.3
 ```
 
 
@@ -79,7 +79,7 @@ experimental:
   plugins:
     cloudfrontgate:
       moduleName: github.com/portswigger-cloud/cloudfrontgate
-      version: v0.0.2
+      version: v0.0.3
 ```
 
 ## Security Features
