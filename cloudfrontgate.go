@@ -240,6 +240,9 @@ func parseResponse(resp CFResponse) ([]net.IPNet, error) {
 func parseCIDRs(ips []string) ([]net.IPNet, error) {
 	trustedIPs := make([]net.IPNet, 0, len(ips))
 	for _, ip := range ips {
+		if !strings.Contains(ip, "/") {
+			ip = fmt.Sprintf("%s/32", ip)
+		}
 		_, ipNet, err := net.ParseCIDR(ip)
 		if err != nil {
 			return nil, fmt.Errorf("failed to parse CIDR: %w", err)

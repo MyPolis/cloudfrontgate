@@ -305,7 +305,7 @@ func TestNewCloudFrontGate(t *testing.T) {
 			name: "Valid config",
 			config: &Config{
 				RefreshInterval: "1m",
-				AllowedIPs:      []string{"173.245.48.0/20"},
+				AllowedIPs:      []string{"173.245.48.0/20", "192.168.1.1"},
 			},
 			expectedError: false,
 
