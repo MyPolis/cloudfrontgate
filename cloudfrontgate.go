@@ -241,7 +241,7 @@ func parseCIDRs(ips []string) ([]net.IPNet, error) {
 	trustedIPs := make([]net.IPNet, 0, len(ips))
 	for _, ip := range ips {
 		if !strings.Contains(ip, "/") {
-			ip = fmt.Sprintf("%s/32", ip)
+			ip += "/32"
 		}
 		_, ipNet, err := net.ParseCIDR(ip)
 		if err != nil {
