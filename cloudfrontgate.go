@@ -216,8 +216,8 @@ type CFResponse struct {
 			"CLOUDFRONT_REGIONAL_EDGE_IP_LIST": ["13.113.196.64/26", "13.113.203.0/24", "52.199.127.192/26", "13.124.199.0/24", "3.35.130.128/25", "..."]
 		}
 	*/
-	GlobalIPList       []string `json:"CLOUDFRONT_GLOBAL_IP_LIST"`        //nolint:tagliatelle
-	RegionalEdgeIPList []string `json:"CLOUDFRONT_REGIONAL_EDGE_IP_LIST"` //nolint:tagliatelle
+	GlobalIPList       []string `json:"CLOUDFRONT_GLOBAL_IP_LIST"`
+	RegionalEdgeIPList []string `json:"CLOUDFRONT_REGIONAL_EDGE_IP_LIST"`
 }
 
 func createContext(ctx context.Context, timeout int, trustedIPs []net.IPNet) context.Context {

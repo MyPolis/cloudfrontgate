@@ -1,3 +1,3 @@
-module github.com/portswigger-cloud/cloudfrontgate
+module github.com/MyPolis/cloudfrontgate
 
 go 1.23.5

@@ -1,13 +1,13 @@
 # cloudfrontgate - Traefik Plugin
+
 A Traefik middleware plugin that validates incoming requests against Amazon Cloudfront's IP ranges, ensuring services are only accessed through Amazon Cloudfront's proxy.
 
 > Heavily _inspired_ by [sstoner/cloudflaregate](https://github.com/sstoner/cloudflaregate/) plugin.
 
-[![Build Status](https://github.com/portswigger-cloud/cloudfrontgate/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/portswigger-cloud/cloudfrontgate/actions)
-[![Go Report](https://goreportcard.com/badge/github.com/portswigger-cloud/cloudfrontgate)](https://goreportcard.com/report/github.com/portswigger-cloud/cloudfrontgate)
-[![Go Coverage](https://github.com/portswigger-cloud/cloudfrontgate/wiki/coverage.svg)](https://raw.githack.com/wiki/portswigger-cloud/cloudfrontgate/coverage.html)
-[![Latest Release](https://img.shields.io/github/v/release/portswigger-cloud/cloudfrontgate)](https://github.com/portswigger-cloud/cloudfrontgate/releases/latest)
-
+[![Build Status](https://github.com/MyPolis/cloudfrontgate/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/MyPolis/cloudfrontgate/actions)
+[![Go Report](https://goreportcard.com/badge/github.com/MyPolis/cloudfrontgate)](https://goreportcard.com/report/github.com/MyPolis/cloudfrontgate)
+[![Go Coverage](https://github.com/MyPolis/cloudfrontgate/wiki/coverage.svg)](https://raw.githack.com/wiki/MyPolis/cloudfrontgate/coverage.html)
+[![Latest Release](https://img.shields.io/github/v/release/MyPolis/cloudfrontgate)](https://github.com/MyPolis/cloudfrontgate/releases/latest)
 
 ## Features
 
@@ -26,10 +26,9 @@ To use this plugin in your Traefik instance, register it in the static configura
 experimental:
   plugins:
     cloudfrontgate:
-      moduleName: github.com/portswigger-cloud/cloudfrontgate
+      moduleName: github.com/MyPolis/cloudfrontgate
       version: v0.0.4
 ```
-
 
 ### Dynamic Configuration
 
@@ -66,10 +65,10 @@ http:
 
 ## Configuration Options
 
-| Option           | Type       | Default | Description                                                  |
-|------------------|------------|---------|--------------------------------------------------------------|
-| `refreshInterval`| string     | `24h`   | Interval for updating CloudFront IP ranges (minimum: 1s)     |
-| `allowedIPs`     | []string   | `[]`    | List of additional IP addresses or CIDR ranges to allow      |
+| Option            | Type     | Default | Description                                              |
+| ----------------- | -------- | ------- | -------------------------------------------------------- |
+| `refreshInterval` | string   | `24h`   | Interval for updating CloudFront IP ranges (minimum: 1s) |
+| `allowedIPs`      | []string | `[]`    | List of additional IP addresses or CIDR ranges to allow  |
 
 ### Example Configuration
 
@@ -78,8 +77,8 @@ http:
 experimental:
   plugins:
     cloudfrontgate:
-      moduleName: github.com/portswigger-cloud/cloudfrontgate
-      version: v0.0.3
+      moduleName: github.com/MyPolis/cloudfrontgate
+      version: v0.0.4
 ```
 
 ## Security Features
@@ -87,13 +86,15 @@ experimental:
 ## Development
 
 ### Prerequisites
+
 - Go 1.22.0 or later
 - Traefik 2.x
 
 ### Building
+
 ```bash
 # Clone the repository
-git clone https://github.com/portswigger-cloud/cloudfrontgate
+git clone https://github.com/MyPolis/cloudfrontgate
 cd cloudfrontgate
 
 # Run tests
@@ -112,7 +113,7 @@ For local testing, use Traefik's development mode:
 experimental:
   localPlugins:
     cloudfrontgate:
-      moduleName: github.com/portswigger-cloud/cloudfrontgate
+      moduleName: github.com/MyPolis/cloudfrontgate
 ```
 
 ## Contributing
@@ -131,5 +132,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Support
 
 If you encounter any issues or have questions:
-- Open an issue on [GitHub](https://github.com/portswigger-cloud/cloudfrontgate/issues)
+
+- Open an issue on [GitHub](https://github.com/MyPolis/cloudfrontgate/issues)
 - Check existing issues for solutions
