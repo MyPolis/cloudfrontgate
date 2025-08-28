@@ -2,7 +2,7 @@ displayName: CloudFront Gate
 type: middleware
 iconPath: .assets/cloudfront.png
 
-import: github.com/portswigger-cloud/cloudfrontgate
+import: github.com/MyPolis/cloudfrontgate
 
 summary: 'Middleware to verify requests originate from Amazon CloudFront IPs when public access enabled.'
 
